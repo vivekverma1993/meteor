@@ -1,0 +1,24 @@
+body {padding-top: 50px;}
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
+.loading-message {color: #fff;font-size: 25px;font-weight: 300;font-family: sans-serif;}
+.sk-spinner-rotating-plane.sk-spinner {background-color: #fff; }
+.input-box {
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.submit-btn{
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 8px;
+}
+
+ul.notifications {
+	position: fixed;
+}

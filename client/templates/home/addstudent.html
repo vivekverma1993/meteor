@@ -1,0 +1,30 @@
+<template name="addStudent">
+  <h1>Add Student</h1>
+  <form>
+    {{#if errorMessages}}
+      <div class="list-errors">
+        {{#each errorMessages}}
+          <div class="list-item">{{this}}</div>
+        {{/each}}
+      </div>
+    {{/if}}
+
+    <div class="input-symbol {{errorClass 'name'}}">
+      <input class="input-box" type="text" name="name" placeholder="Name" />
+    </div>
+
+    <div class="input-symbol  {{errorClass 'contact'}}">
+      <input class="input-box" type="text" name="contact" placeholder="Contact" />
+    </div>
+
+    <div class="input-symbol  {{errorClass 'class'}}">
+      <input class="input-box" type="text" name="class" placeholder="Class" />
+    </div>
+
+    <div class="input-symbol  {{errorClass 'city'}}">
+      <input class="input-box" type="text" name="city" placeholder="City" />
+    </div>
+
+    <button type="submit" class="submit-btn btn-primary">Add student</button>
+  </form>
+</template>
